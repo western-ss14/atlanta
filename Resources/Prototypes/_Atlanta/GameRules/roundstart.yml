@@ -1,0 +1,49 @@
+- type: entity
+  id: RoyalBattleRule
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: RoyalBattleRule
+
+- type: entity
+  id: ScoreRecordingRule
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: ScoreRecordingRule
+
+- type: entity
+  id: MistGameRule
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: MistGameRule
+    playerStartingGears:
+    - MistPlayerGearOfficial1
+    - MistPlayerGearSecurity1
+    - MistPlayerGearEngineer1
+    - MistPlayerGearMedical1
+
+- type: entity
+  id: ExtendedLateJoinRule
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: ExtendedLateJoinRule
+
+- type: entity
+  id: SupplyPointsRule
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: SupplyPointsRule
+
+- type: entity
+  id: MistEnemyWavesRule
+  parent: BaseGameRule
+  noSpawn: true
+  components:
+  - type: EnemyWavesRule
+    enemyStack: DefaultWavesWeights
+    enemySpawnPoint: MistGameEnemySpawnPoint
+    difficulty: 6

@@ -75,7 +75,7 @@
   id: Beer # CargoBounty: BountyBeer
 
 - type: Tag
-  id: BikeHorn # ConstructionGraph: HonkBot, BananiumHorn
+  id: BikeHorn # ConstructionGraph: HonkBot
 
 - type: Tag
   id: Bloodpack # Storage whitelist: ClothingBeltMedical
@@ -1089,7 +1089,7 @@
   id: PillCanister # Storage whitelist: ClothingBeltMedical, ChemBag, ChemMaster, SmartFridge. ItemMapper: ClothingBeltMedical
 
 - type: Tag
-  id: Pipe # ConstructionGraph: BananiumHorn, ImprovisedShotgunGraph, PipeBomb, PneumaticCannon
+  id: Pipe # ConstructionGraph: ImprovisedShotgunGraph, PipeBomb, PneumaticCannon
 
 - type: Tag
   id: Pistachios # Blacklist on BountyFruit.
@@ -1144,7 +1144,7 @@
   id: Potato # ConstructionGraph: PowerCellPotato
 
 - type: Tag
-  id: PotatoBattery # ConstructionGraph: PotatoAI. Blacklisted on battery chargers.
+  id: PotatoBattery # ConstructionGraph: PowerCellPotato. Blacklisted on battery chargers.
 
 - type: Tag
   id: PowerCage # Storage whitelist: PowerCageRecharger, ShuttleGunPerforator
@@ -1300,9 +1300,6 @@
 
 - type: Tag
   id: SlowImmune # Tagged mob entity cannot gain the slowed status effect. Blacklist on StatusEffectSlowdown.
-
-- type: Tag
-  id: SmallAIChip # ConstructionGraph: PotatoAI
 
 - type: Tag # Used on mech equipment.
   id: SmallMech # Equipment whitelist on MechHamtr

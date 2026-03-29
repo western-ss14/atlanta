@@ -43,11 +43,11 @@ namespace Content.Server.Database
         {
             _options = options;
 
-            var prefsCtx = new SqliteServerDbContext(options());
-
             // When inMemory we re-use the same connection, so we can't have any concurrency.
             var concurrency = inMemory ? 1 : cfg.GetCVar(CCVars.DatabaseSqliteConcurrency);
             _prefsSemaphore = new ConcurrencySemaphore(concurrency, synchronous);
+
+            var prefsCtx = new SqliteServerDbContext(_options());
 
             if (synchronous)
             {
@@ -59,8 +59,14 @@ namespace Content.Server.Database
             {
                 _dbReadyTask = Task.Run(() =>
                 {
-                    prefsCtx.Database.Migrate();
-                    prefsCtx.Dispose();
+                    try
+                    {
+                        prefsCtx.Database.Migrate();
+                    }
+                    finally
+                    {
+                        prefsCtx.Dispose();
+                    }
                 });
             }
 

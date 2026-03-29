@@ -1,0 +1,15 @@
+ent-ClickTestBase = { "" }
+    .suffix = DEBUG
+    .desc = { "" }
+ent-ClickTestRotatingCornerVisible = КликТест Вращающийся Угол Видимый
+    .desc = { ent-ClickTestBase.desc }
+ent-ClickTestRotatingCornerVisibleNoRot = КликТест Вращающийся Угол Видимый Без Вращения
+    .desc = { ent-ClickTestRotatingCornerVisible.desc }
+ent-ClickTestRotatingCornerInvisible = КликТест Вращающийся Угол Невидимый
+    .desc = { ent-ClickTestBase.desc }
+ent-ClickTestRotatingCornerInvisibleNoRot = КликТест Вращающийся Угол Невидимый Без Вращения
+    .desc = { ent-ClickTestRotatingCornerInvisible.desc }
+ent-ClickTestFixedCornerVisible = КликТест Фиксированный Угол Видимый
+    .desc = { ent-ClickTestBase.desc }
+ent-ClickTestFixedCornerInvisible = КликТест Фиксированный Угол Невидимый
+    .desc = { ent-ClickTestBase.desc }

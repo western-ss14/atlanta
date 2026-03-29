@@ -29,6 +29,7 @@
       path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
+    fireOnDropChance: 0.3 # Corvax-Next-FireOnDrop
   - type: BallisticAmmoProvider
     whitelist:
       tags:
@@ -43,6 +44,17 @@
         ents: []
   - type: StaticPrice
     price: 500
+  # backmen edit start
+  - type: EmitSoundOnPickup
+    sound:
+      collection: ShotgunsPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: ShotgunsDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: ShotgunsDrop
+  # backmen edit start
 
 - type: entity
   name: Bulldog
@@ -50,6 +62,7 @@
   parent: [BaseItem, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponShotgunBulldog
   description: An automatic magazine-fed shotgun for close-quarters combat. Kicks like a mule on steroids. Uses .50 shotgun shells.
+  categories: [ HideSpawnMenu ] #Backmen-weapons
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/bulldog.rsi
@@ -74,7 +87,7 @@
     availableModes:
     - FullAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
+      path: /Audio/Corvax/Weapons/Guns/Gunshots/shotgun_auto.ogg # Corvax-Guns
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
   - type: ItemSlots
@@ -139,6 +152,7 @@
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponShotgunEnforcer
   description: A premium semi-automatic shotgun, and the pride of all security forces. Uses .50 shotgun shells.
+  categories: [ HideSpawnMenu ] #Backmen-weapons
   components: # intend for Enforcer to have wider choke for semi-auto function
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
@@ -148,20 +162,28 @@
     sprite: Objects/Weapons/Guns/Shotguns/enforcer_inhands_64x.rsi
   - type: BallisticAmmoProvider
   - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
+  - type: Gun # Corvax-Guns
+    soundGunshot:
+      path: /Audio/Corvax/Weapons/Guns/Gunshots/shotgun_metal.ogg
 
 - type: entity
   parent: WeaponShotgunEnforcer
   id: WeaponShotgunEnforcerRubber
+  categories: [ HideSpawnMenu ]
   suffix: Non-Lethal
   components:
   - type: BallisticAmmoProvider
     proto: ShellShotgunBeanbag
+  - type: Gun # Corvax-Guns
+    soundGunshot:
+      path: /Audio/Corvax/Weapons/Guns/Gunshots/shotgun_metal.ogg
 
 - type: entity
   name: Kammerer
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponShotgunKammerer
   description: An old yet faithful design, and a favorite among irregular forces of many worlds. Uses .50 shotgun shells.
+  categories: [ HideSpawnMenu ] #Backmen-weapons
   components: # intend for Kammerer to have tighter choke for slower fire rate and/or manual cycling
   - type: Item
     sprite: Objects/Weapons/Guns/Shotguns/pump_inhands_64x.rsi
@@ -170,8 +192,12 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Shotguns/pump.rsi
   - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
+  - type: BallisticAmmoProvider
+    capacity: 4
   - type: Gun
     fireRate: 1
+    soundGunshot:
+      path: /Audio/Corvax/Weapons/Guns/Gunshots/shotgun_alt.ogg
   - type: GunSpreadModifier
     spread: 0.6
   - type: Tag
@@ -195,6 +221,8 @@
     sprite: Objects/Weapons/Guns/Shotguns/sawn_inhands_64x.rsi
   - type: Gun
     fireRate: 3
+    soundGunshot: # Corvax-Guns
+      path: /Audio/Corvax/Weapons/Guns/Gunshots/shotgun_sawed.ogg
   - type: GunSpreadModifier
     spread: 1.4
   - type: BallisticAmmoProvider
@@ -236,6 +264,8 @@
     sprite: Objects/Weapons/Guns/Shotguns/hm_pistol.rsi
   - type: Gun
     fireRate: 4
+    soundGunshot: # Corvax-Guns
+      path: /Audio/Corvax/Weapons/Guns/Gunshots/shotgun_pipe.ogg
   - type: BallisticAmmoProvider
     capacity: 1
   - type: Construction

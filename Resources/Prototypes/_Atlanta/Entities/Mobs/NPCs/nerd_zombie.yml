@@ -1,0 +1,141 @@
+- type: entity
+  name: debug nerd xeno
+  id: DebugNerdXeno
+  parent: MobXeno
+  description: Moves across all map to kill you
+  components:
+  - type: HTN
+    rootTask:
+      task: ZombieCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+      RangedRange: !type:Single
+        20
+      MovementRange: !type:Single
+        20
+      VisionRadius: !type:Single
+        20
+      BufferRange: !type:Single
+        20
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 7
+    baseSprintSpeed: 7
+
+- type: entity
+  name: jared
+  id: MobFleshJaredNerd
+  parent: MobFleshJaredSalvage
+  description: Moves across all map to kill you
+  components:
+  - type: HTN
+    rootTask:
+      task: ZombieCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+      RangedRange: !type:Single
+        20
+      MovementRange: !type:Single
+        20
+      VisionRadius: !type:Single
+        20
+      BufferRange: !type:Single
+        20
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 4
+    baseSprintSpeed: 5
+
+- type: entity
+  name: golem
+  id: MobFleshGolemNerd
+  parent: MobFleshGolemSalvage
+  description: Moves across all map to kill you
+  components:
+  - type: HTN
+    rootTask:
+      task: ZombieCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+      RangedRange: !type:Single
+        20
+      MovementRange: !type:Single
+        20
+      VisionRadius: !type:Single
+        20
+      BufferRange: !type:Single
+        20
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 4
+    baseSprintSpeed: 4
+
+- type: entity
+  name: clamp
+  id: MobFleshClampNerd
+  parent: MobFleshClampSalvage
+  description: Moves across all map to kill you
+  components:
+  - type: HTN
+    rootTask:
+      task: ZombieCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+      RangedRange: !type:Single
+        20
+      MovementRange: !type:Single
+        20
+      VisionRadius: !type:Single
+        20
+      BufferRange: !type:Single
+        20
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 4
+    baseSprintSpeed: 4
+
+- type: entity
+  name: lover
+  id: MobFleshLoverNerd
+  parent: MobFleshLoverSalvage
+  description: Moves across all map to kill you
+  components:
+  - type: HTN
+    rootTask:
+      task: ZombieCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+      RangedRange: !type:Single
+        20
+      MovementRange: !type:Single
+        20
+      VisionRadius: !type:Single
+        20
+      BufferRange: !type:Single
+        20
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 4
+    baseSprintSpeed: 4

@@ -1,0 +1,16 @@
+ent-BaseItem = предмет
+    .desc = { "" }
+ent-BaseStorageItem = предмет хранения
+    .desc = { ent-BaseItem.desc }
+ent-BaseBagOpenClose = { "" }
+    .desc = { "" }
+ent-BasePaperLabelable = { "" }
+    .desc = { "" }
+ent-BasePaperLabelableVisualized = { ent-BasePaperLabelable }
+    .desc = { ent-BasePaperLabelable.desc }
+ent-PowerCellSlotSmallItem = а
+    .desc = { "" }
+ent-PowerCellSlotMediumItem = а
+    .desc = { "" }
+ent-PowerCellSlotHighItem = { "" }
+    .desc = { "" }

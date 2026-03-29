@@ -101,6 +101,7 @@
   - type: Tag
     tags:
     - BypassInteractionRangeChecks
+  - type: ExtendedSpawnActions # Atlanta
   - type: PointLight
     netsync: false
     radius: 6

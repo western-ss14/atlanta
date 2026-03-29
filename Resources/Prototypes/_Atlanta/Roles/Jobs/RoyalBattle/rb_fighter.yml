@@ -1,0 +1,16 @@
+- type: job
+  id: RbFighter
+  name: royal battle fighter
+  description: Kill other pretenders for the medal!
+  playTimeTracker: JobRbFighter
+  startingGear: PassengerGear
+  icon: "JobIconPassenger"
+  supervisors: You don't have something as a boss.
+
+- type: startingGear
+  id: RbFighterGear
+  equipment:
+    ears: ClothingHeadsetGrey
+    id: CaptainIDCard
+    jumpsuit: ClothingUniformJumpsuitMercenary
+    shoes: ClothingShoesBootsMercFilled

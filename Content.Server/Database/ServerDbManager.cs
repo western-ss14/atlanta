@@ -301,6 +301,19 @@ namespace Content.Server.Database
 
         #endregion
 
+        // Atlanta edit start
+
+        #region Score
+
+        Task SavePlayerScore(NetUserId userId, int winScore, int kills);
+
+        Task<(string, int, int)?> LoadPlayerScore(NetUserId userId);
+
+        Task<List<(string, int, int)>> LoadPlayersScores();
+        // Atlanta edit end
+        
+        #endregion
+
         #region IPintel
 
         Task<bool> UpsertIPIntelCache(DateTime time, IPAddress ip, float score);
@@ -961,6 +974,26 @@ namespace Content.Server.Database
             return RunDbCommand(() => _db.RemoveJobWhitelist(player, job));
         }
 
+        // Atlanta edit start
+        public Task SavePlayerScore(NetUserId userId, int winScore, int kills)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.SavePlayerScore(userId, winScore, kills));
+        }
+
+        public Task<(string, int, int)?> LoadPlayerScore(NetUserId userId)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.LoadPlayerScore(userId));
+        }
+
+        public Task<List<(string, int, int)>> LoadPlayersScores()
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.LoadPlayersScores());
+        }
+        // Atlanta edit end
+        
         public Task<bool> UpsertIPIntelCache(DateTime time, IPAddress ip, float score)
         {
             DbWriteOpsMetric.Inc();

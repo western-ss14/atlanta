@@ -1,0 +1,14 @@
+- type: gameMap
+  id: SilentTown
+  mapName: Silent Town - городок Вашей мечты
+  mapPath: /Maps/_Atlanta/mist_2.yml
+  minPlayers: 1
+  maxRandomOffset: 0
+  randomRotation: false
+  stations:
+    Mist:
+      stationProto: MistStation
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: "Mist"
+      - type: StationSpawning

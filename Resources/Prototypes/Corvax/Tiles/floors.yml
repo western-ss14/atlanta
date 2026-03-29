@@ -1,0 +1,219 @@
+- type: tile
+  id: FloorWoodDark
+  name: wood dark
+  sprite: /Textures/Corvax/Tiles/wood_dark.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWood
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorWoodLight
+  name: wood light
+  sprite: /Textures/Corvax/Tiles/wood_light.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWood
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorWoodRed
+  name: wood red
+  sprite: /Textures/Corvax/Tiles/wood_red.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWood
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorWoodChess
+  name: wood chess
+  sprite: /Textures/Corvax/Tiles/wood_chess.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWood
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorWoodChessLight
+  name: wood chess light
+  sprite: /Textures/Corvax/Tiles/wood_chess_light.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWood
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorWoodParquet
+  name: wood parquet
+  sprite: /Textures/Corvax/Tiles/wood_parquet.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWood
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorWoodParquetBlack
+  name: wood parquet black
+  sprite: /Textures/Corvax/Tiles/wood_parquet_black.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWood
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorWoodLargeDark
+  name: wood large dark
+  sprite: /Textures/Corvax/Tiles/wood_large_dark.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWood
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorWoodLargeLight
+  name: wood large light
+  sprite: /Textures/Corvax/Tiles/wood_large_light.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWood
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorWoodLargeRed
+  name: wood large red
+  sprite: /Textures/Corvax/Tiles/wood_large_red.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWood
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorWoodLargeBlack
+  name: wood large black
+  sprite: /Textures/Corvax/Tiles/wood_large_black.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemWood
+  heatCapacity: 10000

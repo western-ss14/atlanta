@@ -18,13 +18,14 @@
       params:
         volume: -3
     damage:
-      types:
-        Piercing: 5
+      groups:
+        Brute: 5
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
+      groups:
+        Brute: 10
       types:
-        Piercing: 10
         Structural: 30
   - type: Item
     size: Normal
@@ -61,8 +62,9 @@
       path: "/Audio/Items/drill_hit.ogg"
     attackRate: 4
     damage:
+      groups:
+        Brute: 3
       types:
-        Piercing: 3
         Structural: 15
 
 - type: entity
@@ -82,8 +84,9 @@
       path: "/Audio/Items/drill_hit.ogg"
     attackRate: 4
     damage:
+      groups:
+        Brute: 6
       types:
-        Piercing: 6
         Structural: 30
 
 
@@ -129,10 +132,8 @@
     delay: 0.9
   - type: LeechOnMarker
     leech:
-      types:
-        Blunt: -2
-        Slash: -2
-        Piercing: -2
+      groups:
+        Brute: -6
   - type: Gun
     soundGunshot: /Audio/Weapons/plasma_cutter.ogg
     fireRate: 1
@@ -146,21 +147,15 @@
     capacity: 1
     count: 1
   - type: MeleeWeapon
-    attackRate: 1
+    attackRate: 0.8 # Lavaland Change (slightly faster than fireaxe, still weaker damage wise)
     wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 6
+        Blunt: 10 # Lavaland Change: no damage when unwielded2
         Slash: 4
     soundHit:
       collection: MetalThud
   - type: Wieldable
-  - type: IncreaseDamageOnWield
-    damage:
-      types:
-        Blunt: 6
-        Slash: 2
-        Structural: 30
   - type: GunRequiresWield
   - type: DisarmMalus
   - type: Prying
@@ -194,6 +189,14 @@
     malus: 0.225
   - type: ThrowingAngle
     angle: 225
+  - type: Tag
+    tags:
+    - Knife
+  #Backmen-edit-start
+  - type: Construction
+    graph: HolyWeapon
+    node: start
+  #Backmen-edit-end
   - type: Fixtures
     fixtures:
       fix1:
@@ -237,13 +240,8 @@
     count: 1
   - type: LeechOnMarker
     leech:
-      types:
-        Blunt: -5
-        Piercing: -5
-        Slash: -5
-  - type: Tag
-    tags:
-      - Pickaxe
+      groups:
+        Brute: -21 # Lavaland Change: lower crusher healing
   - type: MeleeWeapon
     attackRate: 1
     wideAnimationRotation: -135
@@ -251,9 +249,11 @@
       types:
         Blunt: 3
         Slash: 7
-  - type: IncreaseDamageOnWield
-    damage:
-      types:
-        Blunt: 2
-        Slash: 6
-        Structural: 20
+  - type: Tag
+    tags:
+      - Pickaxe
+  #Backmen-edit-start
+  - type: Construction
+    graph: HolyWeapon
+    node: Lamb
+  #Backmen-edit-end

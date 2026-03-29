@@ -236,6 +236,7 @@
     tags:
     - Write
 
+
 - type: entity
   parent: [BaseItem, BaseSyndicateContraband]
   id: EnergyDaggerBox
@@ -262,9 +263,10 @@
   components:
   - type: ItemToggleMeleeWeapon
     activatedDamage:
-        types:
-            Slash: 10
+        types: # backmen eCutlass buff
+            Slash: 12
             Heat: 12
+            Structural: 10
     deactivatedSecret: true
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_cutlass.rsi

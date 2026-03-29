@@ -1,0 +1,14 @@
+ent-DrinkShaker = шейкер
+    .desc = Верный, смешивающий приятель бармена. Хэй диджей...
+ent-DrinkShotGlass = стопка
+    .desc = Идеально подходит для того, чтобы со злостью ударить ей по столу.
+ent-DrinkShakerGold = золотой шейкер
+    .desc = A gold-plated shaker given as a token of appreciation for years of service. It doesn't make the drinks taste any different.
+ent-BartenderMixer = { "" }
+    .desc = { "" }
+ent-DrinkShakeBase = { ent-DrinkBaseMaterialGlass }
+    .desc = { ent-DrinkBaseMaterialGlass.desc }
+ent-DrinkJigger = джиггер
+    .desc = Как шейкер, только меньше. Используется для регулировки количества ингредиентов.
+ent-DrinkIceBucket = ведёрко для льда
+    .desc = Специальное ведёрко с освежающим льдом. Запрещено использовать для одноимённого челленджа!

@@ -1,0 +1,12 @@
+ent-WeaponTurretSecBase = пистолетная турель охраны
+    .desc = { ent-BaseWeaponTurret.desc }
+ent-WeaponTurretSecRifle = винтовочная турель охраны
+    .desc = { ent-BaseWeaponTurret.desc }
+ent-WeaponTurretSecDisabler = турель охраны с оглушителем
+    .desc = { ent-BaseWeaponTurret.desc }
+ent-WeaponTurretSecLaser = лазерная турель охраны
+    .desc = { ent-BaseWeaponTurret.desc }
+ent-LandMineWeakExplosive = взрывная мина
+    .desc = { ent-BaseLandMine.desc }
+ent-SecurityTechnicianRCD = RCD техника охраны
+    .desc = The rapid construction device can be used to quickly place and remove various station structures and fixtures. Requires compressed matter to function. This model has the ability to place turrets and mines, all of these structures are in the electronics section.

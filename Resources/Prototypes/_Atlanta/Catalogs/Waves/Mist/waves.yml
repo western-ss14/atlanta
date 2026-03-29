@@ -1,0 +1,33 @@
+- type: wavesEnemyStack
+  id: DefaultWavesWeights
+  weights:
+    DebugXeno: 1
+    FlashJared: 2
+    FlashGolem: 2
+    FlashClamp: 2
+    FlashLover: 2
+
+- type: wavesEnemy
+  id: DebugXeno
+  protoId: DebugNerdXeno
+  difficulty: 1
+
+- type: wavesEnemy
+  id: FlashJared
+  protoId: MobFleshJaredNerd
+  difficulty: 0.2
+
+- type: wavesEnemy
+  id: FlashGolem
+  protoId: MobFleshGolemNerd
+  difficulty: 0.2
+
+- type: wavesEnemy
+  id: FlashClamp
+  protoId: MobFleshClampNerd
+  difficulty: 0.2
+
+- type: wavesEnemy
+  id: FlashLover
+  protoId: MobFleshLoverNerd
+  difficulty: 0.2

@@ -8,6 +8,7 @@
     sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
     layers:
     - state: icon
+      map: [ "Base" ]
     - state: animation-icon
       visible: false
       map: [ "empty-icon" ]
@@ -20,3 +21,8 @@
   - type: ContainerContainer
     containers:
       upgrades: !type:Container
+  #Backmen-edit-start
+  - type: Construction
+    graph: HolyWeapon
+    node: Retribution
+  #Backmen-edit-end

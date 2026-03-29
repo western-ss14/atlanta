@@ -1,0 +1,17 @@
+ent-FitnessWeightsBench1 = скамья для весов
+    .desc = { ent-SeatBase.desc }
+ent-FitnessWeightLifter = тренажер для поднятия весов
+    .desc = { ent-FitnessWeightsBench1.desc }
+ent-FitnessPunchingBagBopClown = клоунская груша
+    .desc = A fitness training bag with a clown printed on it.
+ent-FitnessPunchingBag = боксерская груша
+    .desc = A fitness training bag.
+ent-FitnessPunchingBagCaptain = { ent-FitnessPunchingBag }
+    .desc = A fitness training bag with a captain printed on it.
+    .suffix = captain
+ent-FitnessPunchingBagSyndicate = { ent-FitnessPunchingBag }
+    .desc = A fitness training bag with a syndicate agent printed on it.
+    .suffix = syndicate
+ent-FitnessPunchingBagWizard = { ent-FitnessPunchingBag }
+    .desc = A fitness training bag with a wizard printed on it.
+    .suffix = wizard

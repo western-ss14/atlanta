@@ -1,0 +1,16 @@
+- type: entity
+  parent: [ BaseItem, StorePresetUplink ]
+  id: MistRadio
+  name: mist radio
+  description: It can say you wait, nothing more :)
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/communication.rsi
+    layers:
+    - state: old-radio
+  - type: Item
+    sprite: Objects/Devices/communication.rsi
+    heldPrefix: old-radio
+  - type: MistRadio
+    pack: MistRadioMessagesPack
+  - type: Speech

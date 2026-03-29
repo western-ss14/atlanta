@@ -1,0 +1,16 @@
+- type: gameMap
+  id: RbDeathStar
+  mapName: Royal Battle Death Star
+  mapPath: /Maps/_Atlanta/death_star_royal_battle.yml
+  minPlayers: 5
+  maxRandomOffset: 0
+  randomRotation: false
+  stations:
+    RbDeathStar:
+      stationProto: StandardNanotrasenStation
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: "Royal Battle Death Star"
+      - type: StationJobs
+        availableJobs:
+          Passenger: [-1, -1]

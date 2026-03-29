@@ -1,4 +1,4 @@
-﻿using Content.Shared.FixedPoint;
+using Content.Shared.FixedPoint;
 using Content.Shared.Mobs;
 using Robust.Shared.Network;
 
@@ -7,7 +7,7 @@ namespace Content.Server.KillTracking;
 /// <summary>
 /// This is used for entities that track player damage sources and killers.
 /// </summary>
-[RegisterComponent, Access(typeof(KillTrackingSystem))]
+[RegisterComponent, Access(typeof(KillTrackingSystem), typeof(Content.Server.Atlanta.GameTicking.Rules.MistGameRuleSystem))]
 public sealed partial class KillTrackerComponent : Component
 {
     /// <summary>

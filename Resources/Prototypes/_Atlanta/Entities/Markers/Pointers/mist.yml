@@ -1,0 +1,89 @@
+- type: entity
+  id: MistGamePlayerSpawnPoint
+  name: the mist game player spawn point
+  description: Here will be spawning new "lost" players
+  placement:
+    mode: SnapgridCenter
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+  - type: LateGamePointJoin
+
+- type: entity
+  id: MistGameEnemySpawnPoint
+  name: the mist game enemy spawn point
+  description: Here will be spawning new enemies
+  placement:
+    mode: SnapgridCenter
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+  - type: LateGamePointJoin
+
+- type: entity
+  id: MistGameCenterPoint
+  name: the mist game center point
+  description: lalallllvlvlvlalvalvalvalvalv
+  placement:
+    mode: SnapgridCenter
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: pink
+  - type: MistCenterPoint
+
+- type: entity
+  id: MistGameSupplyPoint
+  name: the mist game supply point
+  description: Here appears supply boxes.
+  placement:
+    mode: SnapgridCenter
+  # parent: MarkerBase
+  components:
+  - type: SupplyPoint
+    category: MistGame
+    supplyProto: MistSupply
+  # Flare
+  - type: Sprite
+    sprite: Objects/Misc/flare.rsi
+    drawdepth: FloorObjects
+    layers:
+      - map: [ enum.ExpendableLightVisualLayers.Glow ]
+        state: flare_burn
+        color: "#FFFFFF"
+        visible: true
+        shader: unshaded
+      - map: [ enum.ExpendableLightVisualLayers.Overlay ]
+        state: flare_unlit
+        color: "#FF0000"
+  - type: Icon
+    sprite: Objects/Misc/flare.rsi
+    state: icon
+  - type: Appearance
+  - type: PointLight
+    enabled: true
+    color: "#FF8080"
+    radius: 1.0
+    energy: 9.0
+    netsync: true
+  - type: SpamEmitSound
+    minInterval: 30
+    maxInterval: 90
+    sound:
+      collection: ArcadeNoise
+      params:
+        volume: -8
+        maxDistance: 10
+        variation: 0.05
+  - type: ExpendableLight
+  loopedSound:
+      path: /Audio/Items/Flare/flare_burn.ogg
+      params:
+        loop: true
+        volume: -10
+        maxDistance: 5

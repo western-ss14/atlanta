@@ -87689,8 +87689,6 @@ entities:
       parent: 1
     - type: Fixtures
       fixtures: {}
-- proto: PotatoAIChip
-  entities:
   - uid: 11551
     components:
     - type: Transform

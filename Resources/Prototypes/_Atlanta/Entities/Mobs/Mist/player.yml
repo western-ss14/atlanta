@@ -1,0 +1,13 @@
+- type: entity
+  id: MobMistPlayer
+  name: mist player
+  parent: MobHuman
+  description: I'm too lazy to do normal prototype for players.
+  components:
+  - type: MistPlayer
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: RandomMetadata
+    nameSegments: # Corvax-MRP
+    - names_first_male
+    - names_last_male

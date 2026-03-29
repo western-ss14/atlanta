@@ -10,10 +10,10 @@
     - state: icon
       map: ["base"]
   - type: Appearance
-  - type: HolidayVisuals
-    holidays:
-      festive:
-      - FestiveSeason
+#  - type: HolidayVisuals
+#    holidays:
+#      festive:
+#      - FestiveSeason
   - type: GenericVisualizer
     visuals:
       enum.HolidayVisuals.Holiday:
@@ -51,3 +51,5 @@
   # also limits the crew's use
   - type: TimedDespawn
     lifetime: 30
+
+

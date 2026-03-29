@@ -1,0 +1,63 @@
+# -- Melee --
+# Selects a target in melee and tries to attack it.
+- type: htnCompound
+  id: MeleeZombieCombatCompound
+  branches:
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: PlayerMeleeTargets
+        - !type:HTNCompoundTask
+          task: ZombieMeleeAttackTargetCompound
+
+# Tries to melee attack our target.
+- type: htnCompound
+  id: ZombieMeleeAttackTargetCompound
+  branches:
+    - preconditions:
+      - !type:KeyExistsPrecondition
+        key: Target
+      tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:ZombieMoveToOperator
+            shutdownState: PlanFinished
+            pathfindInPlanning: true
+            removeKeyOnFinish: false
+            targetKey: TargetCoordinates
+            pathfindKey: TargetPathfind
+            rangeKey: MeleeRange
+        # - !type:HTNPrimitiveTask
+        #   operator: !type:JukeOperator
+        #     jukeType: Away
+        - !type:HTNPrimitiveTask
+          operator: !type:MeleeOperator
+            targetKey: Target
+            targetState: 2
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+            - !type:TargetInRangePrecondition
+              targetKey: Target
+              rangeKey: MeleeRange
+          services:
+            - !type:UtilityService
+              id: MeleeService
+              proto: PlayerMeleeTargets
+              key: Target
+
+- type: utilityQuery
+  id: PlayerMeleeTargets
+  query:
+    - !type:PlayerHostilesQuery
+  considerations:
+  - !type:TargetDistanceCon
+      curve: !type:PresetCurve
+        preset: TargetDistance
+
+- type: utilityCurvePreset
+  id: ZombieTargetDistance
+  curve: !type:QuadraticCurve
+    slope: 0
+    exponent: 0
+    yOffset: 1
+    xOffset: 0

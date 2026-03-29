@@ -1,0 +1,16 @@
+- type: gameMap
+  id: derevna
+  mapName: derevna
+  mapPath: /Maps/_Atlanta/derevna.yml
+  minPlayers: 5
+  maxRandomOffset: 0
+  randomRotation: false
+  stations:
+    RbDeathStar:
+      stationProto: StandardNanotrasenStation
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: "Derevna"
+      - type: StationJobs
+        availableJobs:
+          Passenger: [-1, -1]
