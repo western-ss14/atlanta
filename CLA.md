@@ -1,7 +1,7 @@
 # LICENSE AGREEMENT FOR "WESTERN ATLANTA ROYALE"
 
 ## Preamble
-Upon receipt of a copy of the licensed object by any means, any person may use it if they accept and agree to all the terms of this license. Violation of the license terms grants the Licensor the right to apply methods of legal and technological protection using the DMCA and/or other legislation of the states under whose jurisdiction hosting providers and other information intermediaries are located, providing services to violators of the terms of this license. Acceptance of these terms constitutes a definitive agreement between you and The Space Frontier (hereinafter the "Licensor") for a gratuitous, simple, non-exclusive license, hereinafter referred to as the "Agreement." The Agreement does not include provisions regulating issues related to the processing of personal data.
+Upon receipt of a copy of the licensed object by any means, any person may use it if they accept and agree to all the terms of this license. Violation of the license terms grants the Licensor the right to apply methods of legal and technological protection using the DMCA and/or other legislation of the states under whose jurisdiction hosting providers and other information intermediaries are located, providing services to violators of the terms of this license. Acceptance of these terms constitutes a definitive agreement between you and WESTERN (hereinafter the "Licensor") for a gratuitous, simple, non-exclusive license, hereinafter referred to as the "Agreement." The Agreement does not include provisions regulating issues related to the processing of personal data.
 
 ## Definitions
 
