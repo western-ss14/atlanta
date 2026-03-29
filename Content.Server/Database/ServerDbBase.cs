@@ -1552,6 +1552,103 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
 
         #endregion
 
+        // Atlanta edit start
+
+        #region Score
+
+        public async Task<Score> EnsurePlayerScore(NetUserId userId)
+        {
+            await using var db = await GetDb();
+
+            Score record;
+            try
+            {
+                record = await db.DbContext.Scores.Where(e => e.PlayerUserId == userId.UserId).SingleAsync();
+            }
+            catch (InvalidOperationException)
+            {
+                db.DbContext.Scores.Add(record = new Score
+                {
+                    PlayerUserId = userId.UserId,
+                    WinScore = 0,
+                    Kills = 0,
+                });
+                await db.DbContext.SaveChangesAsync();
+            }
+
+            return record;
+        }
+
+        public async Task SavePlayerScore(NetUserId userId, int winScore, int kills)
+        {
+            await using var db = await GetDb();
+            var record = await db.DbContext.Scores
+                .SingleOrDefaultAsync(e => e.PlayerUserId == userId.UserId);
+            if (record == null)
+            {
+                record = new Score
+                {
+                    PlayerUserId = userId.UserId,
+                    WinScore = 0,
+                    Kills = 0,
+                };
+                db.DbContext.Scores.Add(record);
+            }
+
+            record.WinScore = winScore;
+            record.Kills = kills;
+            await db.DbContext.SaveChangesAsync();
+        }
+
+        public async Task<(string, int, int)?> LoadPlayerScore(NetUserId userId)
+        {
+            await using var db = await GetDb();
+            var score = await EnsurePlayerScore(userId);
+
+            var usernameEntry = await db.DbContext.Player
+                .Where(e => e.UserId == score.PlayerUserId)
+                .SingleOrDefaultAsync();
+
+            if (usernameEntry == null)
+            {
+                return null;
+            }
+
+            var nickname = usernameEntry.LastSeenUserName;
+            var winScore = score.WinScore;
+            var kills = score.Kills;
+
+            return (nickname, winScore, kills);
+        }
+
+        public async Task<List<(string, int, int)>> LoadPlayersScores()
+        {
+            await using var db = await GetDb();
+
+            var entries = db.DbContext.Scores.ToList();
+            var result = new List<(string, int, int)>();
+
+            foreach (var entry in entries)
+            {
+                var usernameEntry = await db.DbContext.Player
+                    .Where(e => e.UserId == entry.PlayerUserId)
+                    .SingleOrDefaultAsync();
+
+                if (usernameEntry == null)
+                {
+                    continue;
+                }
+
+                result.Add((usernameEntry.LastSeenUserName, entry.WinScore, entry.Kills));
+            }
+
+            return result;
+        }
+
+        #endregion
+
+        // Atlanta edit end
+        
         # region IPIntel
 
         public async Task<bool> UpsertIPIntelCache(DateTime time, IPAddress ip, float score)

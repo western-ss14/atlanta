@@ -181,11 +181,3 @@
   targetNode: icon
   category: construction-category-weapons
   objectType: Item
-
-- type: construction
-  id: CardSword
-  graph: CardSword
-  startNode: start
-  targetNode: cardSword
-  category: construction-category-weapons
-  objectType: Item

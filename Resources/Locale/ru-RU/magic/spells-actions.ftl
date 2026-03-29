@@ -1,0 +1,11 @@
+action-speech-spell-forcewall = ТАРКОЛ МИНЗЦИ СХЕРИ!
+action-speech-spell-knock = ТУКИ ТУКИ!
+action-speech-spell-smite = ИЕ НАТХ!
+action-speech-spell-summon-magicarp = АЙЕ ПРОУК ЙЕН
+action-speech-spell-fireball = ОНИ'СОМА!
+action-speech-spell-summon-guns = ТЫО В С'ТОВЕ!
+action-speech-spell-summon-magic = Р'ЗД'Ч М'Г'И!
+action-speech-spell-mind-swap = ПОМЕН СРАЗУ!
+action-speech-spell-cluwne = !КНОХ
+action-speech-spell-slip = СКУОЛЬ ЗКО!
+action-speech-spell-charge = ДИ'РИ СЭЛ!

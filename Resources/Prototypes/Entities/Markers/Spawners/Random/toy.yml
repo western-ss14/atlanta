@@ -233,7 +233,6 @@
       - id: ToySword
       - id: FoamBlade
       - id: FoamCutlass
-      - id: CardSword
     - !type:GroupSelector # Throwing type group
       rolls: 2 # Expendables need restocks
       children:
@@ -323,7 +322,6 @@
       children:
       - id: PersonalAI
         weight: 8
-      - id: PotatoAI
       - id: GoldenPersonalAI
         weight: 0.1 # 1 in 1,456. A truly rare item
     - !type:GroupSelector # Orbs of "power"
@@ -366,7 +364,6 @@
       weight: .005 # 1 in 200
       children:
       - id: CluwneHorn # you lose, clown >:o)
-      - id: BananiumHorn
       - id: PushHorn
       - id: GoldenBikeHorn
 

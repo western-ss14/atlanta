@@ -1,0 +1,21 @@
+- type: entity
+  id: ExtendedJoinSpawnQueuePlayerAction
+  name: join player spawn queue
+  description: Joins respawn queue.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    event: !type:JoinLateGameQueueEvent
+    icon: Interface/Actions/blight.png
+    checkCanInteract: false
+
+- type: entity
+  id: ExtendedLeaveSpawnQueuePlayerAction
+  name: leave player spawn queue
+  description: Leaves respawn queue.
+  noSpawn: true
+  components:
+  - type: InstantAction
+    event: !type:LeaveLateGameQueueEvent
+    icon: Interface/Actions/overloadlight.png
+    checkCanInteract: false

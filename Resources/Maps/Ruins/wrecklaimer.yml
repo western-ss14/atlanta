@@ -2717,8 +2717,6 @@ entities:
     - type: Transform
       pos: 11.5,-0.5
       parent: 1
-- proto: BananiumHorn
-  entities:
   - uid: 723
     components:
     - type: Transform

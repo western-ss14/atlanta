@@ -1,0 +1,7 @@
+- type: entity
+  id: MistStation
+  parent:
+  - BaseStation
+  noSpawn: true
+  components:
+  - type: Transform

@@ -45749,8 +45749,6 @@ entities:
       parent: 1668
     - type: Fixtures
       fixtures: {}
-- proto: PotatoAI
-  entities:
   - uid: 938
     components:
     - type: Transform

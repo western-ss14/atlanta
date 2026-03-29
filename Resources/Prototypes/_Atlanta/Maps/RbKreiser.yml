@@ -1,0 +1,16 @@
+- type: gameMap
+  id: RbKreiser
+  mapName: Royal Battle Kreiser
+  mapPath: /Maps/_Atlanta/kreiser_royal_battle.yml
+  minPlayers: 5
+  maxRandomOffset: 0
+  randomRotation: false
+  stations:
+    RbKreiser:
+      stationProto: StandardNanotrasenStation
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: "Royal Battle Kreiser"
+      - type: StationJobs
+        availableJobs:
+          Passenger: [-1, -1]

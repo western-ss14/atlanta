@@ -1,0 +1,6 @@
+- type: htnCompound
+  id: ZombieCompound
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: MeleeZombieCombatCompound

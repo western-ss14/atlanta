@@ -1,0 +1,14 @@
+ent-MissileBase = капсула сброса припасов
+    .desc = A standard-issue Nanotrasen storage unit.
+ent-GibZone = зона расчленения
+    .desc = A zone when you step her, you got gibbed. If you see that, you are probably dead.
+ent-SupplyPodBase = капсула сброса припасов
+    .desc = A standard-issue Nanotrasen storage unit.
+ent-DropPodMarkerBase = { "" }
+    .desc = { "" }
+ent-DropPodMarkerSimple = голографический маяк
+    .suffix = Component
+    .desc = { ent-DropPodMarkerBase.desc }
+ent-DropPodLaunchAnimationSimple = { ent-DropPodMarkerBase }
+    .suffix = Component
+    .desc = { ent-DropPodMarkerBase.desc }

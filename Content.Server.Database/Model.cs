@@ -50,6 +50,8 @@ namespace Content.Server.Database
         public DbSet<BanTemplate> BanTemplate { get; set; } = null!;
         public DbSet<IPIntelCache> IPIntelCache { get; set; } = null!;
 
+        public DbSet<Score> Scores { get; set; } = null!; // Atlanta
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Preference>()
@@ -1031,6 +1033,17 @@ namespace Content.Server.Database
         }
     }
 
+    // Atlanta edit start
+    public sealed class Score
+    {
+        [Key]
+        [Required, ForeignKey("Player")]
+        public Guid PlayerUserId { get; set; }
+
+        public int WinScore { get; set; }
+        public int Kills { get; set; }
+    }
+    // Atlanta edit end
 
     /// <summary>
     ///  Cache for the IPIntel system

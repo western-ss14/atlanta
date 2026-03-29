@@ -1,0 +1,35 @@
+- type: entity
+  name: grenade box
+  parent: BoxCardboard
+  id: BoxGrenadeNonLetal
+  components:
+    - type: StorageFill
+      contents:
+        - id: GrenadeNonletal
+          amount: 4
+
+- type: entity
+  name: grenade box
+  parent: BoxCardboard
+  id: BoxGrenadeTearGas
+  components:
+    - type: StorageFill
+      contents:
+        - id: GrenadeTearGas
+          amount: 4
+
+- type: Tag
+  id: UpgradeStation
+
+- type: entity
+  parent: BaseItem
+  id: UpgradeStation
+  name: upgrade pack
+  description: Pack of attechment for weapons.
+  components:
+  - type: Sprite
+    sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
+    state: icon
+  - type: Tag
+    tags:
+    - UpgradeStation

@@ -1,0 +1,10 @@
+ent-LavalandWeaponKineticBase = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }
+ent-LavalandWeaponKineticSpear = кинетическое копье
+    .desc = A long-ranged melee weapon. Deals less damage than a normal crusher, but has longer attack range.
+ent-LavalandWeaponKineticHammer = кинетический молот
+    .desc = A beefy, two-handed weapon that inflicts knockback and heavier damage than a crusher.
+ent-LavalandWeaponKineticClaws = кинетические когти
+    .desc = Unleash your inner edgelord with this one-handed claw small enough to fit in your backpack. Deals a lot more damage when backstabbing marked targets.
+ent-LavalandWeaponKineticMachete = кинетическая мачете
+    .desc = A smaller, one-handed variant of the crusher which allows you to block attacks.

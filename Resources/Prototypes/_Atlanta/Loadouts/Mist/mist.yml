@@ -1,0 +1,45 @@
+# official
+- type: startingGear
+  id: MistPlayerGearOfficial1
+  equipment:
+    head: ClothingHeadHatHoshat
+    jumpsuit: ClothingUniformJumpsuitJournalist
+    shoes: ClothingShoesBootsLaceup
+    belt: ClothingBeltStorageWaistbag
+
+# security
+- type: startingGear
+  id: MistPlayerGearSecurity1
+  equipment:
+    head: ClothingHeadHatWarden
+    jumpsuit: ClothingUniformJumpsuitSec
+    shoes: ClothingShoesBootsJackSecFilled
+    belt: ClothingBeltSecurityFilled
+    outerClothing: ClothingOuterVestArmorSec
+
+# engineer
+- type: startingGear
+  id: MistPlayerGearEngineer1
+  equipment:
+    head: ClothingHeadHatHardhatOrange
+    jumpsuit: ClothingUniformJumpsuitEngineering
+    shoes: ClothingShoesBootsWork
+    belt: ClothingBeltUtilityEngineering
+    outerClothing: ClothingOuterVestHazard
+    back: ClothingBackpackSatchelEngineering
+
+# medical
+- type: startingGear
+  id: MistPlayerGearMedical1
+  equipment:
+    head: ClothingHeadHatBeretSeniorPhysician
+    jumpsuit: ClothingUniformJumpsuitSeniorPhysician
+    gloves: ClothingHandsGlovesLatex
+    mask: ClothingMaskBreathMedicalSecurity
+    outerClothing: ClothingOuterCoatLabSeniorPhysician
+    back: ClothingBackpackSatchelMedical
+    shoes: ClothingShoesColorWhite
+  storage:
+    back:
+    - MedkitCombatFilled
+    - HandheldHealthAnalyzerUnpowered

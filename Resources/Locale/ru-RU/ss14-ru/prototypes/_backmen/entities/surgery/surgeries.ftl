@@ -1,0 +1,14 @@
+ent-SurgeryBase = { "" }
+    .desc = { "" }
+ent-SurgeryHealOrgans = Исцелить органы
+    .desc = { ent-SurgeryBase.desc }
+ent-SurgeryAttachGroin = Прикрепить пах
+    .desc = { ent-SurgeryBase.desc }
+ent-SurgeryAttachLegs = Прикрепить ноги
+    .desc = { ent-SurgeryBase.desc }
+ent-SurgeryAttachHands = Прикрепить руки
+    .desc = { ent-SurgeryBase.desc }
+ent-SurgeryAttachFeet = Прикрепить стопы
+    .desc = { ent-SurgeryBase.desc }
+ent-SurgeryMendBrainTissue = Восстановить ткань мозга
+    .desc = { ent-SurgeryBase.desc }

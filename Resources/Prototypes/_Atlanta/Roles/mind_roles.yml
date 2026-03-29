@@ -1,0 +1,10 @@
+# Royal Battle — mind role (inherits antag baseline like other solo antags)
+- type: entity
+  parent: BaseMindRoleAntag
+  id: MindRoleRoyalBattle
+  name: Royal Battle Fighter Role
+  components:
+  - type: MindRole
+    antagPrototype: GenericAntagonist
+    roleType: SoloAntagonist
+  - type: RbPlayerRole
