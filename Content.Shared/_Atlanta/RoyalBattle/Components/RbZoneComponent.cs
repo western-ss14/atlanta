@@ -62,7 +62,7 @@ public sealed partial class RbZoneComponent : Component
     public TimeSpan DamageTiming = TimeSpan.FromSeconds(1);
 
     public SpriteSpecifier ZoneTexture = new SpriteSpecifier.Texture(
-        new ResPath("Effects/fire.rsi/zone.png"));
+        new ResPath("Effects/fire.rsi/2.png"));
 
     [DataField("zoneStartSound")]
     public SoundSpecifier ZoneStartSound = new SoundPathSpecifier("/Audio/_Atlanta/Misc/RoyalBattle/rb_zone_start.ogg");
