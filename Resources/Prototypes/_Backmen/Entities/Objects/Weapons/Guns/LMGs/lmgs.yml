@@ -61,9 +61,6 @@
     walkModifier: 1
     sprintModifier: 0.8
   - type: HeldSpeedModifier
-  - type: Construction
-    graph: RPDTactical
-    node: start
 
 - type: entity
   name: MG-60

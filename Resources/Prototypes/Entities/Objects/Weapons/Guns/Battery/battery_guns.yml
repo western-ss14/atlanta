@@ -868,8 +868,6 @@
   - type: Tag # backmen
     tags:
     - HighRiskItem
-  - type: StealTarget # backmen
-    stealGroup: WeaponEnergyShotgun
   - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
   - type: Battery
     maxCharge: 1200 # backmen

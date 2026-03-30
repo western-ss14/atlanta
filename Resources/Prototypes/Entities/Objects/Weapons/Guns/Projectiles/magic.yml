@@ -107,7 +107,7 @@
     onlyCollideWhenShot: true
     damage:
       types:
-        Brute: 0
+        Blunt: 0
   - type: Sprite
     noRot: true
     sprite: Structures/Storage/closet.rsi

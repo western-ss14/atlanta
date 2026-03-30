@@ -55,9 +55,6 @@
   - type: Wieldable
   - type: UseDelay
     delay: 0.5
-  - type: Construction
-    graph: MP5Tactical
-    node: start
 
 - type: entity
   parent: WeaponSubMachineGunMP5
@@ -171,9 +168,6 @@
         whitelist:
           tags:
             - CartridgePistol9x17
-  - type: Construction
-    graph: VectorTactical
-    node: start
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -456,9 +450,6 @@
   - type: Wieldable
   - type: UseDelay
     delay: 0.5
-  - type: Construction
-    graph: P90Tactical
-    node: start
 
 - type: entity
   name: ПП Витязь

@@ -7,7 +7,6 @@
     Mosin: 0.5
     Ar18: 0.2
     M16A4: 0.2
-    Bullets30: 0.4
     Bullets20: 0.5
 
 - type: supplyPointContent
@@ -24,7 +23,6 @@
 - type: supplyPointContent
   id: M1Garand
   content:
-  - WeaponSniperM1Garand
   - SpeedLoaderLightRifle
 
 - type: supplyPointContent
@@ -44,11 +42,6 @@
   content:
   - WeaponRifleM16A4
   - MagazineRifle
-
-- type: supplyPointContent
-  id: Bullets30
-  content:
-  - MagazineLightRiflePkBox
 
 - type: supplyPointContent
   id: Bullets20

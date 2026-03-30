@@ -13,9 +13,7 @@
   equipment:
     head: ClothingHeadHatWarden
     jumpsuit: ClothingUniformJumpsuitSec
-    shoes: ClothingShoesBootsJackSecFilled
     belt: ClothingBeltSecurityFilled
-    outerClothing: ClothingOuterVestArmorSec
 
 # engineer
 - type: startingGear
@@ -42,4 +40,4 @@
   storage:
     back:
     - MedkitCombatFilled
-    - HandheldHealthAnalyzerUnpowered
+    - HandheldHealthAnalyzer

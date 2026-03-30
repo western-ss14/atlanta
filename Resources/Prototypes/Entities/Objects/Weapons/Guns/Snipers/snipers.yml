@@ -25,7 +25,6 @@
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
-    fireOnDropChance: 0.9 # Corvax-Next-FireOnDrop
   - type: BallisticAmmoProvider
     capacity: 10
     proto: CartridgeLightRifle

@@ -23,10 +23,9 @@
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
-      groups:
-        Brute: 10
       types:
         Structural: 30
+        Brute: 10
   - type: Item
     size: Normal
     shape:
@@ -192,11 +191,6 @@
   - type: Tag
     tags:
     - Knife
-  #Backmen-edit-start
-  - type: Construction
-    graph: HolyWeapon
-    node: start
-  #Backmen-edit-end
   - type: Fixtures
     fixtures:
       fix1:
@@ -252,8 +246,3 @@
   - type: Tag
     tags:
       - Pickaxe
-  #Backmen-edit-start
-  - type: Construction
-    graph: HolyWeapon
-    node: Lamb
-  #Backmen-edit-end
