@@ -1198,7 +1198,7 @@
       shader: unshaded
       color: red
   - type: Projectile
-    impactEffect: BulletImpactEffectRedDisabler
+    impactEffect: BulletImpactEffectDisabler
     damage:
       types:
         Heat: 20 # Slightly more damage than the 17heat from the Captain's Hitscan lasgun

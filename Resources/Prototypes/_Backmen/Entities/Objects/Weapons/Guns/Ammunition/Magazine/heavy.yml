@@ -4,9 +4,6 @@
   parent: BaseItem
   abstract: true
   components:
-  - type: Tag
-    tags:
-      - MagazineHeavyRifle
   - type: Item
     size: Normal
   - type: BallisticAmmoProvider

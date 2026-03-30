@@ -142,62 +142,62 @@
     castShadows: false
     color: "#ffca1b"
 
-- type: entity
-  parent: BikeHorn
-  id: BananiumHorn
-  name: bananium horn
-  description: An air horn made from bananium.
-  components:
-  - type: Sprite
-    sprite: Objects/Fun/bananiumhorn.rsi
-    state: icon
-  - type: Item
-    sprite: Objects/Fun/bananiumhorn.rsi
-    size: Small
-  - type: Clothing
-    sprite: Objects/Fun/bananiumhorn.rsi
-    slots: [Belt]
-    quickEquip: false
-  - type: UseDelay
-    delay: 3
-  - type: EmitSoundOnUse
-    sound:
-      collection: BananiumHorn
-      params:
-        variation: 0.246
-  - type: EmitSoundOnLand
-    sound:
-      collection: BananiumHorn
-      params:
-        variation: 0.246
-  - type: EmitSoundOnTrigger
-    sound:
-      collection: BananiumHorn
-      params:
-        variation: 0.246
-  - type: EmitSoundOnActivate
-    sound:
-      collection: BananiumHorn
-      params:
-        variation: 0.246
-  - type: EmitSoundOnCollide
-    sound:
-      collection: BananiumHorn
-      params:
-        variation: 0.246
-  - type: MeleeWeapon
-    wideAnimationRotation: 135
-    soundHit:
-      collection: BananiumHorn
-      params:
-        variation: 0.246
-    damage:
-      types:
-        Blunt: 0
-    hidden: true
-  - type: Construction
-    graph: BananiumHorn
-    node: bananiumHorn
+# - type: entity
+#   parent: BikeHorn
+#   id: BananiumHorn
+#   name: bananium horn
+#   description: An air horn made from bananium.
+#   components:
+#   - type: Sprite
+#     sprite: Objects/Fun/bananiumhorn.rsi
+#     state: icon
+#   - type: Item
+#     sprite: Objects/Fun/bananiumhorn.rsi
+#     size: Small
+#   - type: Clothing
+#     sprite: Objects/Fun/bananiumhorn.rsi
+#     slots: [Belt]
+#     quickEquip: false
+#   - type: UseDelay
+#     delay: 3
+#   - type: EmitSoundOnUse
+#     sound:
+#       collection: BananiumHorn
+#       params:
+#         variation: 0.246
+#   - type: EmitSoundOnLand
+#     sound:
+#       collection: BananiumHorn
+#       params:
+#         variation: 0.246
+#   - type: EmitSoundOnTrigger
+#     sound:
+#       collection: BananiumHorn
+#       params:
+#         variation: 0.246
+#   - type: EmitSoundOnActivate
+#     sound:
+#       collection: BananiumHorn
+#       params:
+#         variation: 0.246
+#   - type: EmitSoundOnCollide
+#     sound:
+#       collection: BananiumHorn
+#       params:
+#         variation: 0.246
+#   - type: MeleeWeapon
+#     wideAnimationRotation: 135
+#     soundHit:
+#       collection: BananiumHorn
+#       params:
+#         variation: 0.246
+#     damage:
+#       types:
+#         Blunt: 0
+#     hidden: true
+#   - type: Construction
+#     graph: BananiumHorn
+#     node: bananiumHorn
 
 - type: entity
   parent: BaseItem

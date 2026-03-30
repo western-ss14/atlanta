@@ -2,7 +2,7 @@
   id: ExtendedJoinSpawnQueuePlayerAction
   name: join player spawn queue
   description: Joins respawn queue.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
     event: !type:JoinLateGameQueueEvent
@@ -13,7 +13,7 @@
   id: ExtendedLeaveSpawnQueuePlayerAction
   name: leave player spawn queue
   description: Leaves respawn queue.
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
     event: !type:LeaveLateGameQueueEvent

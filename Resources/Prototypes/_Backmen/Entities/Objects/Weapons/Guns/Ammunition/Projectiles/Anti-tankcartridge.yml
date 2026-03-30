@@ -8,7 +8,6 @@
     damage:
       types:
         Piercing: 200
-        ArmorPiercing: 100
         Structural: 400
   - type: StaminaDamageOnCollide
     damage: 100

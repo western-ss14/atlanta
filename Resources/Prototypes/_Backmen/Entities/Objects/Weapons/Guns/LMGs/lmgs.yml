@@ -160,9 +160,6 @@
         insertSound: /Audio/Weapons/Guns64/LMGs/m60_reload.ogg
         ejectSound: /Audio/Weapons/Guns64/LMGs/m60_unload.ogg
         priority: 2
-        whitelist:
-          tags:
-            - MagazineHeavyRifle
       gun_chamber:
         name: Chamber
         startingItem: CartridgeRifle

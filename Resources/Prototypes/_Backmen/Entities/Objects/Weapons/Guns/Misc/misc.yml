@@ -164,9 +164,8 @@
   - type: Projectile
     impactEffect: BulletImpactEffect
     damage:
-      groups:
-        Brute: 20
-        Burn: 20
+      Brute: 20
+      Burn: 20
     soundHit:
       path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
   - type: LightningArcShooter
@@ -197,7 +196,7 @@
     - Back
     - suitStorage
   - type: Item
-    size: HeavyMachineGun
+    size: Large
   - type: AmmoCounter
   - type: Gun
     soundGunshot:
