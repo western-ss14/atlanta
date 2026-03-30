@@ -18,14 +18,13 @@
       params:
         volume: -3
     damage:
-      groups:
-        Brute: 5
+      types:
+        Structural: 5
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       types:
         Structural: 30
-        Brute: 10
   - type: Item
     size: Normal
     shape:
@@ -61,8 +60,6 @@
       path: "/Audio/Items/drill_hit.ogg"
     attackRate: 4
     damage:
-      groups:
-        Brute: 3
       types:
         Structural: 15
 
@@ -83,8 +80,6 @@
       path: "/Audio/Items/drill_hit.ogg"
     attackRate: 4
     damage:
-      groups:
-        Brute: 6
       types:
         Structural: 30
 
@@ -131,8 +126,8 @@
     delay: 0.9
   - type: LeechOnMarker
     leech:
-      groups:
-        Brute: -6
+      types:
+        Structural: -6
   - type: Gun
     soundGunshot: /Audio/Weapons/plasma_cutter.ogg
     fireRate: 1
@@ -234,8 +229,8 @@
     count: 1
   - type: LeechOnMarker
     leech:
-      groups:
-        Brute: -21 # Lavaland Change: lower crusher healing
+      types:
+        Structural: -21 # Lavaland Change: lower crusher healing
   - type: MeleeWeapon
     attackRate: 1
     wideAnimationRotation: -135

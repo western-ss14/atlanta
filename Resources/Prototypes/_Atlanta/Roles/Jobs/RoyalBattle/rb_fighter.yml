@@ -5,7 +5,6 @@
   playTimeTracker: JobRbFighter
   startingGear: PassengerGear
   icon: "JobIconPassenger"
-  supervisors: You don't have something as a boss.
 
 - type: startingGear
   id: RbFighterGear

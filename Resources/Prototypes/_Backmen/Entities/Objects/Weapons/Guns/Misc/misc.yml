@@ -164,8 +164,8 @@
   - type: Projectile
     impactEffect: BulletImpactEffect
     damage:
-      Brute: 20
-      Burn: 20
+      types:
+        Structural: 20
     soundHit:
       path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
   - type: LightningArcShooter

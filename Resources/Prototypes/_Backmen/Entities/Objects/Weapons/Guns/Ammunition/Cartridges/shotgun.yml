@@ -15,7 +15,7 @@
     solutions:
       ammo:
         reagents:
-        - ReagentId: SoulbreakerToxin
+        - ReagentId: Toxin
           Quantity: 15
   - type: SolutionTransfer
     maxTransferAmount: 15

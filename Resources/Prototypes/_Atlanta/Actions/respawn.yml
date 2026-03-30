@@ -6,8 +6,8 @@
   components:
   - type: InstantAction
     event: !type:JoinLateGameQueueEvent
-    icon: Interface/Actions/blight.png
-    checkCanInteract: false
+
+
 
 - type: entity
   id: ExtendedLeaveSpawnQueuePlayerAction
@@ -17,5 +17,5 @@
   components:
   - type: InstantAction
     event: !type:LeaveLateGameQueueEvent
-    icon: Interface/Actions/overloadlight.png
-    checkCanInteract: false
+
+

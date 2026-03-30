@@ -12,7 +12,7 @@
   - type: Projectile
     damage:
       types:
-        Heat: 10
+        Structural: 10
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
     layers:
@@ -247,10 +247,7 @@
   - type: Projectile
     damage:
       types:
-        Brute: -900
-        Burn: -900
-        Airloss: -600
-        Toxin: -600
+        Structural: -900
     ignoreResistances: true
 
 - type: entity
