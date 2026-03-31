@@ -1,21 +1,25 @@
 - type: entity
   id: ExtendedJoinSpawnQueuePlayerAction
+  parent: BaseMentalAction
   name: join player spawn queue
   description: Joins respawn queue.
   noSpawn: true
   components:
+  - type: Action
+    icon: Interface/Actions/overloadlight.png
   - type: InstantAction
     event: !type:JoinLateGameQueueEvent
-    icon: Interface/Actions/blight.png
     checkCanInteract: false
 
 - type: entity
   id: ExtendedLeaveSpawnQueuePlayerAction
+  parent: BaseMentalAction
   name: leave player spawn queue
   description: Leaves respawn queue.
   noSpawn: true
   components:
+  - type: Action
+    icon: Interface/Actions/overloadlight.png
   - type: InstantAction
     event: !type:LeaveLateGameQueueEvent
-    icon: Interface/Actions/overloadlight.png
     checkCanInteract: false

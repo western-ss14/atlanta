@@ -50,7 +50,7 @@ public sealed class ExtendedLateJoinRuleSystem :  GameRuleSystem<ExtendedLateJoi
     private void OnQueueSpawningDisable(DisableQueueSpawningEvent ev)
     {
         var queue = EntityQueryEnumerator<ExtendedLateJoinRuleComponent>();
-        while (queue.MoveNext(out var _, out var rule))
+        while (queue.MoveNext(out _, out var rule))
         {
             rule.Enabled = false;
         }
@@ -163,10 +163,10 @@ public sealed class ExtendedLateJoinRuleSystem :  GameRuleSystem<ExtendedLateJoi
 
     private void OnJoinQueue(Entity<ExtendedSpawnActionsComponent> ent, ref JoinLateGameQueueEvent ev)
     {
-        if (_mind.TryGetMind(ent.Owner, out var mindId , out var _))
+        if (_mind.TryGetMind(ent.Owner, out var mindId , out _))
         {
             var queue = EntityQueryEnumerator<ExtendedLateJoinRuleComponent>();
-            while (queue.MoveNext(out var _, out var rule))
+            while (queue.MoveNext(out _, out var rule))
             {
                 if (rule.Enabled)
                 {
