@@ -8,7 +8,7 @@
     tags:
       - PowerpackRifle
   - type: Item
-    size: HeavyMachineGun
+    size: Ginormous
   - type: Clothing
     slots:
     - Back
@@ -47,7 +47,7 @@
     tags:
       - PowerpackEnergy
   - type: Item
-    size: HeavyMachineGun
+    size: Ginormous
   - type: Clothing
     slots:
     - Back

@@ -1,21 +1,21 @@
 - type: entity
   id: RoyalBattleRule
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: RoyalBattleRule
 
 - type: entity
   id: ScoreRecordingRule
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: ScoreRecordingRule
 
 - type: entity
   id: MistGameRule
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: MistGameRule
     playerStartingGears:
@@ -27,21 +27,21 @@
 - type: entity
   id: ExtendedLateJoinRule
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: ExtendedLateJoinRule
 
 - type: entity
   id: SupplyPointsRule
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: SupplyPointsRule
 
 - type: entity
   id: MistEnemyWavesRule
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: EnemyWavesRule
     enemyStack: DefaultWavesWeights

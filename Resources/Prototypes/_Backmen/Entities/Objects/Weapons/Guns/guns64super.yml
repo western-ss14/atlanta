@@ -200,7 +200,7 @@
     sprite: Backmen/Objects/Weapons/Gunsx64/Rifles/aksu/tinysuper.rsi
   - type: Item
     sprite: Backmen/Objects/Weapons/Gunsx64/Rifles/aksu/tinysuper.rsi
-    size: NormalLarge
+    size: Large
   - type: GunWieldBonus
     minAngle: -23
     maxAngle: 0

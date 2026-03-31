@@ -16,14 +16,6 @@
   - type: Tag
     tags:
       - MagazinePulseRifleSWS
-  - type: BallisticAmmoProvider
-    cycleable: false
-    mayTransfer: true
-    capacity: 70
-    proto: PulseBullet
-    whitelist:
-      tags:
-        - PulseBullet
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container

@@ -29,7 +29,6 @@
       path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
-    fireOnDropChance: 0.3 # Corvax-Next-FireOnDrop
   - type: BallisticAmmoProvider
     whitelist:
       tags:

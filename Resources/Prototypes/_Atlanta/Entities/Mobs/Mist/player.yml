@@ -9,5 +9,5 @@
     randomizeName: false
   - type: RandomMetadata
     nameSegments: # Corvax-MRP
-    - names_first_male
-    - names_last_male
+      - NamesFirst
+      - NamesLast

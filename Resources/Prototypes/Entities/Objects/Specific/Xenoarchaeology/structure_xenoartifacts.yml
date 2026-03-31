@@ -3,7 +3,7 @@
   id: BaseXenoArtifactStructure
   name: artifact
   abstract: true
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   # Visual
   - type: Sprite

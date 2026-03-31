@@ -61,9 +61,6 @@
     walkModifier: 1
     sprintModifier: 0.8
   - type: HeldSpeedModifier
-  - type: Construction
-    graph: RPDTactical
-    node: start
 
 - type: entity
   name: MG-60
@@ -163,9 +160,6 @@
         insertSound: /Audio/Weapons/Guns64/LMGs/m60_reload.ogg
         ejectSound: /Audio/Weapons/Guns64/LMGs/m60_unload.ogg
         priority: 2
-        whitelist:
-          tags:
-            - MagazineHeavyRifle
       gun_chamber:
         name: Chamber
         startingItem: CartridgeRifle

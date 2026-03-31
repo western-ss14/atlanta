@@ -14,4 +14,3 @@ damage-type-structural = Структурные
 damage-type-holy = Святые
 #backmen
 damage-type-stun = Оглушающий
-damage-type-armorpiercing = Пробивающий

@@ -7,7 +7,6 @@
   description: rb-description
   showInVote: true
   supportedMaps: RoyalBattleMapPool
-  ignoreForcesetMap: true
   rules:
   - RoyalBattleRule
 
@@ -20,7 +19,6 @@
   description: mist-game-preset-description
   showInVote: true
   supportedMaps: MistMapPool
-  ignoreForcesetMap: true
   rules:
   - MistEnemyWavesRule
   - ExtendedLateJoinRule

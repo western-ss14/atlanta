@@ -48,7 +48,7 @@ public sealed partial class MistGameRuleComponent : Component
     public TimeSpan SmoothingSupplyTiming = TimeSpan.FromSeconds(30);
 
     [DataField]
-    public SoundSpecifier SupplyAttention = new SoundPathSpecifier("/Audio/Atlanta/Misc/Mist/supply-helicopter.ogg");
+    public SoundSpecifier SupplyAttention = new SoundPathSpecifier("/Audio/_Atlanta/Misc/Mist/supply-helicopter.ogg");
 
     public CancellationTokenSource SupplyTimerToken = new();
 

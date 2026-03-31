@@ -1,4 +1,3 @@
-research-technology-armorpiercingammo = Бронебойные боеприпасы
 research-technology-energy_barriers = Энергетические барьеры
 research-technology-Earth-Armories = Технологическое древо Earth Armories
 research-technology-pistol-base = Основы короткоствольного вооружения
