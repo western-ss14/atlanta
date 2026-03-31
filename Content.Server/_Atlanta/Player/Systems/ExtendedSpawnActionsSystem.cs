@@ -23,9 +23,9 @@ public sealed class ExtendedSpawnActionsSystem : EntitySystem
 
         while (queue.MoveNext(out var rule))
         {
-            _actions.AddAction(ent.Owner, ref ent.Comp.ActionId, rule.JoinAction);
             ent.Comp.JoinProtoId = rule.JoinAction;
             ent.Comp.LeaveProtoId = rule.LeaveAction;
+            _actions.AddAction(ent.Owner, ref ent.Comp.ActionId, rule.JoinAction);
         }
     }
 }
