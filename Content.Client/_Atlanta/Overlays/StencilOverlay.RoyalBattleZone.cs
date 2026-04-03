@@ -1,16 +1,12 @@
 using System.Numerics;
 using Content.Shared.Atlanta.RoyalBattle.Components;
 using Robust.Client.Graphics;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
 namespace Content.Client.Overlays;
 
 public sealed partial class StencilOverlay
 {
-    private static readonly ProtoId<ShaderPrototype> StencilMaskShader = "StencilMask";
-    private static readonly ProtoId<ShaderPrototype> StencilDrawShader = "StencilDraw";
-
     private void DrawRoyalBattleZone(in OverlayDrawArgs args, CachedResources res, RbZoneComponent rbZoneComponent,
         Matrix3x2 invMatrix)
     {
@@ -47,13 +43,13 @@ public sealed partial class StencilOverlay
         }, Color.Transparent);
 
         worldHandle.SetTransform(Matrix3x2.Identity);
-        worldHandle.UseShader(_protoManager.Index(StencilMaskShader).Instance());
+        worldHandle.UseShader(_protoManager.Index(StencilMask).Instance());
         worldHandle.DrawTextureRect(res.Blep!.Texture, worldBounds);
         var curTime = _timing.RealTime;
         var sprite = _sprite.GetFrame(rbZoneComponent.ZoneTexture, curTime);
 
         // Draw the rain
-        worldHandle.UseShader(_protoManager.Index(StencilDrawShader).Instance());
+        worldHandle.UseShader(_protoManager.Index(StencilDraw).Instance());
         _parallax.DrawParallax(worldHandle, worldAABB, sprite, curTime, position, new Vector2(0.5f, 0f), modulate: Color.White);
     }
 }
