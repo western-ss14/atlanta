@@ -1,8 +1,8 @@
 using System.Numerics;
 using Content.Shared.Atlanta.RoyalBattle.Components;
 using Robust.Client.Graphics;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Robust.Shared.Prototypes;
 
 namespace Content.Client.Overlays;
 
@@ -10,7 +10,6 @@ public sealed partial class StencilOverlay
 {
     private static readonly ProtoId<ShaderPrototype> StencilMaskShader = "StencilMask";
     private static readonly ProtoId<ShaderPrototype> StencilDrawShader = "StencilDraw";
-
     private void DrawRoyalBattleZone(in OverlayDrawArgs args, CachedResources res, RbZoneComponent rbZoneComponent,
         Matrix3x2 invMatrix)
     {
